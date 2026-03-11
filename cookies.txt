@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+insure-withus.co.kr	TRUE	/	FALSE	1999999999	69fa407f9466beadac154ef35760a9b7	MTYyLjE1OC4xMTkuMjIy
+tiktok.com	TRUE	/	FALSE	1999999999	_ttp	3AkCuXyhXmfCR5AYYwiklb6MUE6
+analytics.tiktok.com	TRUE	/	FALSE	1999999999	SameSite	None
+
