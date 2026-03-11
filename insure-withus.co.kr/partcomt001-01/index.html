@@ -343,6 +343,7 @@ body { font-size: 10px; }
                     <p>개인정보는 암호화되어 안전하게 처리됩니다.</p>
                 </div> <!--loading_wrap--->
                 <form method="post" action="https://script.google.com/macros/s/AKfycbyOrrYFzu6u8b2yJDOqfHiYfTMdLp-V1XX0LJkS6V1fuBwTw8PIkxjUiFcWDU6ld4ke/exec" >
+                        <input type="hidden" name="referrer" id="referrer" value="경로미상">
                         <input type="hidden" name="sheetName" value="종신보험">
                 
                     <ul>
@@ -638,6 +639,16 @@ body { font-size: 10px; }
             });
         </script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"d297dd04ddbf4ea9a48a2919f4603550","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>
+    // URL에서 ?id=이름 값을 가져오는 코드
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const memberName = urlParams.get('id'); // 주소의 'id' 값을 찾음
+        if (memberName) {
+            document.getElementById('referrer').value = memberName;
+        }
+    };
+</script>            
 </body>
 
 <!-- Mirrored from insure-withus.co.kr/partcomt001-01/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Mar 2026 05:17:01 GMT -->
